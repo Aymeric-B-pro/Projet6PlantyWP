@@ -1,69 +1,149 @@
 <?php
 /**
- * The header for Astra Theme.
+ * The template for displaying the header
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * Displays all of the head element and everything up until the page header div.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Astra
- * @since 1.0.0
+ * @package Neve
+ * @since   1.0.0
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
-/*zeze */
 ?><!DOCTYPE html>
-<?php astra_html_before(); ?>
-<html <?php language_attributes(); ?>>
-<head>
-<?php astra_head_top(); ?>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<?php 
-if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
-	?>
-	 <link rel="profile" href="https://gmpg.org/xfn/11"> 
-	 <?php
-} 
+<?php
+
+/**
+ * Filters the header classes.
+ *
+ * @param string $header_classes Header classes.
+ *
+ * @since 2.3.7
+ */
+$header_classes = apply_filters( 'nv_header_classes', 'header' );
+
+/**
+ * Fires before the page is rendered.
+ */
+do_action( 'neve_html_start_before' );
+
 ?>
-<?php wp_head(); ?>
-<?php astra_head_bottom(); ?>
+<html <?php language_attributes(); ?>>
+
+<head>
+	<?php
+	/**
+	 * Executes actions after the head tag is opened.
+	 *
+	 * @since 2.11
+	 */
+	do_action( 'neve_head_start_after' );
+	?>
+
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php endif; ?>
+	<?php wp_head(); ?>
+
+	<?php
+	/**
+	 * Executes actions before the head tag is closed.
+	 *
+	 * @since 2.11
+	 */
+	do_action( 'neve_head_end_before' );
+	?>
 </head>
 
-<body <?php astra_schema_body(); ?> <?php body_class(); ?>>
-<?php astra_body_top(); ?>
-<?php wp_body_open(); ?>
-
-<a
-	class="skip-link screen-reader-text"
-	href="#content"
-	role="link"
-	title="<?php echo esc_attr( astra_default_strings( 'string-header-skip-link', false ) ); ?>">
-		<?php echo esc_html( astra_default_strings( 'string-header-skip-link', false ) ); ?>
-</a>
-
-<div
+<body  <?php body_class(); ?> <?php neve_body_attrs(); ?> >
 <?php
-	echo astra_attr(
-		'site',
-		array(
-			'id'    => 'page',
-			'class' => 'hfeed site',
-		)
-	);
-	?>
->
+/**
+ * Executes actions after the body tag is opened.
+ *
+ * @since 2.11
+ */
+do_action( 'neve_body_start_after' );
+?>
+<?php wp_body_open(); ?>
+<div class="wrapper">
 	<?php
-	astra_header_before();
-
-	astra_header();
-
-	astra_header_after();
-
-	astra_content_before();
+	/**
+	 * Executes actions before the header tag is opened.
+	 *
+	 * @since 2.7.2
+	 */
+	do_action( 'neve_before_header_wrapper_hook' );
 	?>
-	<div id="content" class="site-content">
-		<div class="ast-container">
-		<?php astra_content_top(); ?>
+
+	<header class="<?php echo esc_attr( $header_classes ); ?>" <?php echo ( neve_is_amp() ) ? 'next-page-hide' : ''; ?> >
+		<a class="neve-skip-link show-on-focus" href="#content" >
+			<?php echo __( 'Skip to content', 'neve' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		</a>
+		<nav class="navbar">    
+			<a class="logo-contenair" href="home.html">
+				<img class="logo" src="images/Logo.png" alt="Logo Planty">
+			</a>
+			<ul class="nav-links">
+				<li>
+					<a class="link-meet" href="contact.html">Nous rencontrer</a>
+				</li>
+
+				<li>
+					<a class="link-admin" href="#">Admin</a>
+				</li>
+
+				<li>
+					<a class="button-order" href="order.html">Commander</a>
+				</li>
+			</ul>
+    	</nav>
+		<?php
+		/**
+		 * Executes actions before the header ( navigation ) area.
+		 *
+		 * @since 1.0.0
+		 */
+		do_action( 'neve_before_header_hook' );
+
+		if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'header' ) === true ) {
+			do_action( 'neve_do_header' );
+		}
+
+		/**
+		 * Executes actions after the header ( navigation ) area.
+		 *
+		 * @since 1.0.0
+		 */
+		do_action( 'neve_after_header_hook' );
+		?>
+	</header>
+
+	<?php
+	/**
+	 * Executes actions after the header tag is closed.
+	 *
+	 * @since 2.7.2
+	 */
+	do_action( 'neve_after_header_wrapper_hook' );
+	?>
+
+
+	<?php
+	/**
+	 * Executes actions before main tag is opened.
+	 *
+	 * @since 1.0.4
+	 */
+	do_action( 'neve_before_primary' );
+	?>
+
+	<main id="content" class="neve-main">
+
+<?php
+/**
+ * Executes actions after main tag is opened.
+ *
+ * @since 1.0.4
+ */
+do_action( 'neve_after_primary_start' );
+

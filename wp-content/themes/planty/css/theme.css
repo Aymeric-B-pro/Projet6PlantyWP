@@ -1,10 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
 /* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
-body * {
-   font-family: 'syne', sans-serif;
+* {
+    font-family: 'Syne', sans-serif;
 }
 
-/* Header 
+:root {
+    --main-color: #ECE2DA;
+    --second-color: #3B8E46;
+    --third-color: #D2776A;
+    --button-color: #DC9F96;
+    --second-color-button: #C02E44;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-container {
+    width: 100%;
+    min-width: 1025px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--main-color);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 45.6px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*HEADER*/
+
 .navbar {
     height: 80px;
     display: flex;
@@ -17,11 +64,11 @@ body * {
     display: flex;
     align-items: center; 
 }
-
+/*
 .logo {
     width: 201px;
     height: 19px;
-}
+} */
 
 .logo-contenair {
     margin-top: 60px; 
@@ -37,7 +84,7 @@ body * {
     text-decoration: none;
 }
 
-.button-order {
+.button-order-header {
     width: 236px;
     height: 80px;
     background: var(--button-color);
@@ -48,7 +95,7 @@ body * {
     color: #FFFFFF;
 }
 
-.button-order:hover {
+.button-order-header:hover {
     background-color : var(--second-color-button);
 }
 
@@ -63,4 +110,4 @@ body * {
 
 ul {
     list-style-type: none;
-} */
+}

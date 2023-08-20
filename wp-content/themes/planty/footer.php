@@ -1,36 +1,77 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for displaying the footer
  *
- * Contains the closing of the #content div and all content after.
+ * Contains the closing of the "wrapper" div and all content after.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Astra
- * @since 1.0.0
+ * @package Neve
+ * @since   1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+/**
+ * Executes actions before main tag is closed.
+ *
+ * @since 1.0.4
+ */
+do_action( 'neve_before_primary_end' ); ?>
+
+</main><!--/.neve-main-->
+
+<?php
+
+/**
+ * Executes actions after main tag is closed.
+ *
+ * @since 1.0.4
+ */
+do_action( 'neve_after_primary' );
+
+/**
+ * Filters the content parts.
+ *
+ * @since 1.0.9
+ *
+ * @param bool   $status Whether the component should be displayed or not.
+ * @param string $context The context name.
+ */
+if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'footer' ) === true ) {
+
+	/**
+	 * Executes actions before the footer was rendered.
+	 *
+	 * @since 1.0.0
+	 */
+	do_action( 'neve_before_footer_hook' );
+
+	/**
+	 * Executes the rendering function for the footer.
+	 *
+	 * @since 1.0.0
+	 */
+	do_action( 'neve_do_footer' );
+
+	/**
+	 * Executes actions after the footer was rendered.
+	 *
+	 * @since 1.0.0
+	 */
+	do_action( 'neve_after_footer_hook' );
 }
+?>
+
+</div><!--/.wrapper-->
+<?php
+
+wp_footer();
+
+/**
+ * Executes actions before the body tag is closed.
+ *
+ * @since 2.11
+ */
+do_action( 'neve_body_end_before' );
 
 ?>
-<?php astra_content_bottom(); ?>
-	</div> <!-- ast-container -->
-	</div><!-- #content -->
-<?php 
-	astra_content_after();
-		
-	astra_footer_before();
-		
-	astra_footer();
-		
-	astra_footer_after(); 
-?>
-	</div><!-- #page -->
-<?php 
-	astra_body_bottom();    
-	wp_footer(); 
-?>
-	</body>
+</body>
+
 </html>
