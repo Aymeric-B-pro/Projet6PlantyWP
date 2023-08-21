@@ -79,25 +79,8 @@ do_action( 'neve_body_start_after' );
 		<a class="neve-skip-link show-on-focus" href="#content" >
 			<?php echo __( 'Skip to content', 'neve' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</a>
-		<nav class="navbar">    
-			<a class="logo-contenair" href="home.html">
-				<img class="logo" src="images/Logo.png" alt="Logo Planty">
-			</a>
-			<ul class="nav-links">
-				<li>
-					<a class="link-meet" href="contact.html">Nous rencontrer</a>
-				</li>
-
-				<li>
-					<a class="link-admin" href="#">Admin</a>
-				</li>
-
-				<li>
-					<a class="button-order" href="order.html">Commander</a>
-				</li>
-			</ul>
-    	</nav>
 		<?php
+
 		/**
 		 * Executes actions before the header ( navigation ) area.
 		 *
@@ -116,6 +99,7 @@ do_action( 'neve_body_start_after' );
 		 */
 		do_action( 'neve_after_header_hook' );
 		?>
+
 	</header>
 
 	<?php

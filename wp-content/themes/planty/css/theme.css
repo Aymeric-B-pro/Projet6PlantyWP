@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
-/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+/* Import de la font depuis Google Fonts et l'applique sur tous les éléments de la page */
 * {
     font-family: 'Syne', sans-serif;
 }
 
+
+
+/*
 :root {
     --main-color: #ECE2DA;
     --second-color: #3B8E46;
     --third-color: #D2776A;
     --button-color: #DC9F96;
     --second-color-button: #C02E44;
-}
-
+}  */
+/*
 body {
     display: flex;
     justify-content: center;
@@ -26,7 +29,8 @@ body {
     scroll-behavior: smooth;
     background-color: var(--main-color);
 }
-
+*/
+/*
 h1 {
     font-weight: 800;
     font-size: 38px;
@@ -49,8 +53,25 @@ p {
     font-weight: 400;
     font-size: 20px;
 }
+*/
+/*HEADER*/  /*
+.button.button-primary {
+    width: 236px;
+    height: 80px;
+    padding: 30.5px 61px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.2px;
+}
 
-/*HEADER*/
+.header--row-inner header-main-inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+ */
+/*
 
 .navbar {
     height: 80px;
@@ -64,11 +85,11 @@ p {
     display: flex;
     align-items: center; 
 }
-/*
+
 .logo {
     width: 201px;
     height: 19px;
-} */
+} 
 
 .logo-contenair {
     margin-top: 60px; 
@@ -110,4 +131,4 @@ p {
 
 ul {
     list-style-type: none;
-}
+} */
