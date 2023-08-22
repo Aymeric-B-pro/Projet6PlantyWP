@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
-/* Import de la font depuis Google Fonts et l'applique sur tous les éléments de la page */
-* {
+body {
     font-family: 'Syne', sans-serif;
 }
-
 
 
 /*
