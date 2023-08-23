@@ -1,33 +1,26 @@
+/****** General ***********/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
+
 body {
     font-family: 'Syne', sans-serif;
 }
 
-
-/*
 :root {
     --main-color: #ECE2DA;
     --second-color: #3B8E46;
     --third-color: #D2776A;
     --button-color: #DC9F96;
     --second-color-button: #C02E44;
-}  */
-/*
+}
+
 body {
     display: flex;
     justify-content: center;
-}
-
-
-.main-container {
-    width: 100%;
-    min-width: 1025px;
-    max-width: 1440px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
     background-color: var(--main-color);
 }
-*/
-/*
+
+
 h1 {
     font-weight: 800;
     font-size: 38px;
@@ -50,82 +43,12 @@ p {
     font-weight: 400;
     font-size: 20px;
 }
-*/
-/*HEADER*/  /*
-.button.button-primary {
-    width: 236px;
-    height: 80px;
-    padding: 30.5px 61px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19.2px;
+
+/** HEADER **/
+
+
+/** HOME **/
+
+.green ,h1 ,h3 {
+  color: var(--second-color);
 }
-
-.header--row-inner header-main-inner {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
- */
-/*
-
-.navbar {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    background-color: white;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center; 
-}
-
-.logo {
-    width: 201px;
-    height: 19px;
-} 
-
-.logo-contenair {
-    margin-top: 60px; 
-}
-
-.navbar a {
-    margin-left: 68px; 
-    height: 80px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19.2px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.button-order-header {
-    width: 236px;
-    height: 80px;
-    background: var(--button-color);
-    padding: 30.5px 61px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19.2px;
-    color: #FFFFFF;
-}
-
-.button-order-header:hover {
-    background-color : var(--second-color-button);
-}
-
-.link-meet,
-.link-admin {
-    color: #000000;
-}
-
-.link-meet:hover {
-    font-weight: bold;
-}
-
-ul {
-    list-style-type: none;
-} */
