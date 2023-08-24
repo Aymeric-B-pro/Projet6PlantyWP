@@ -79,8 +79,15 @@ do_action( 'neve_body_start_after' );
 		<a class="neve-skip-link show-on-focus" href="#content" >
 			<?php echo __( 'Skip to content', 'neve' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</a>
+		<nav class="navbar">
+			<?php
+				wp_nav_menu(array(
+					'theme_location' => 'header-menu',
+					'container' => 'div',
+				));
+			?>
+		</nav>
 		<?php
-
 		/**
 		 * Executes actions before the header ( navigation ) area.
 		 *
@@ -99,7 +106,6 @@ do_action( 'neve_body_start_after' );
 		 */
 		do_action( 'neve_after_header_hook' );
 		?>
-
 	</header>
 
 	<?php

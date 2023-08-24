@@ -4,6 +4,9 @@
 
 body {
     font-family: 'Syne', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
 }
 
 :root {
@@ -14,35 +17,6 @@ body {
     --second-color-button: #C02E44;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    background-color: var(--main-color);
-}
-
-
-h1 {
-    font-weight: 800;
-    font-size: 38px;
-    line-height: 45.6px;
-}
-
-h2 {
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 36px;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-}
-
-p {
-    font-weight: 400;
-    font-size: 20px;
-}
 
 /** HEADER **/
 
@@ -51,4 +25,9 @@ p {
 
 .green ,h1 ,h3 {
   color: var(--second-color);
+}
+
+.red ,h2 {
+    margin-bottom: 10px;
+    color: var(--third-color);
 }
