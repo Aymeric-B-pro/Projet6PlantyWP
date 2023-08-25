@@ -6,12 +6,6 @@ body {
     font-family: 'Syne', sans-serif;
     display: flex;
     justify-content: center;
-    width: 100%;
-    min-width: 1025px;
-    max-width: 1440px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    background-color: var(--main-color);
 }
 
 :root {
@@ -22,22 +16,23 @@ body {
     --second-color-button: #C02E44;
 }
 
-.main-container {
-    
+.wrapper {
+    width: 100%;
+    min-width: 1025px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--main-color);
 }
 
-/** HEADER **/
-.header-menu li {
+/* HEADER ET FOOTER */
+/*.header-menu li,
+.footer-menu li {
     display: none;
-}
+} */
 
 .header li:hover {
     font-weight: bold;
-}
-
-/** FOOTER **/
-.footer-menu li {
-    display: none;
 }
 
 /** HOME **/
@@ -50,3 +45,12 @@ body {
     margin-bottom: 10px;
     color: var(--third-color);
 }
+
+.canette {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

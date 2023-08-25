@@ -80,15 +80,7 @@ do_action( 'neve_body_start_after' );
 			<?php echo __( 'Skip to content', 'neve' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</a>
 
-	<nav class="navbar">
-		<?php
-			wp_nav_menu(array(
-				'theme_location' => 'header-menu',
-				'container' => '',
-				'menu_class' => 'header-menu', // Ajoutez cette ligne pour définir une classe pour votre menu
-			));
-		?>
-	</nav>
+
 
 	<?php
 	/**

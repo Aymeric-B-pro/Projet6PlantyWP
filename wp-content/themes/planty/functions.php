@@ -7,6 +7,7 @@ function theme_enqueue_styles()
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory()
      . '/css/theme.css'));
 }
+
 /* Header */
 function register_custom_menus() {
     register_nav_menus(array(
@@ -14,6 +15,7 @@ function register_custom_menus() {
     ));
 }
 add_action('after_setup_theme', 'register_custom_menus');
+
 /* Footer */
 function register_footer_menu() {
     register_nav_menu('footer-menu', 'Menu du footer');
@@ -28,4 +30,3 @@ function ajouter_lien_admin($items, $args) {
     }
     return $items;
 } 
-
