@@ -79,33 +79,37 @@ do_action( 'neve_body_start_after' );
 		<a class="neve-skip-link show-on-focus" href="#content" >
 			<?php echo __( 'Skip to content', 'neve' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</a>
-		<nav class="navbar">
-			<?php
-				wp_nav_menu(array(
-					'theme_location' => 'header-menu',
-					'container' => 'div',
-				));
-			?>
-		</nav>
+
+	<nav class="navbar">
 		<?php
-		/**
-		 * Executes actions before the header ( navigation ) area.
-		 *
-		 * @since 1.0.0
-		 */
-		do_action( 'neve_before_header_hook' );
-
-		if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'header' ) === true ) {
-			do_action( 'neve_do_header' );
-		}
-
-		/**
-		 * Executes actions after the header ( navigation ) area.
-		 *
-		 * @since 1.0.0
-		 */
-		do_action( 'neve_after_header_hook' );
+			wp_nav_menu(array(
+				'theme_location' => 'header-menu',
+				'container' => '',
+				'menu_class' => 'header-menu', // Ajoutez cette ligne pour définir une classe pour votre menu
+			));
 		?>
+	</nav>
+
+	<?php
+	/**
+	 * Executes actions before the header ( navigation ) area.
+	 *
+	 * @since 1.0.0
+	 */
+	do_action( 'neve_before_header_hook' );
+
+	if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'header' ) === true ) {
+		do_action( 'neve_do_header' );
+	}
+
+	/**
+	 * Executes actions after the header ( navigation ) area.
+	 *
+	 * @since 1.0.0
+	 */
+	do_action( 'neve_after_header_hook' );
+	?>
+
 	</header>
 
 	<?php

@@ -14,8 +14,6 @@ function register_custom_menus() {
 }
 add_action('after_setup_theme', 'register_custom_menus');
 
-
-
 add_filter('wp_nav_menu_items', 'ajouter_lien_admin', 10, 2);
 function ajouter_lien_admin($items, $args) {
     if (is_user_logged_in() && current_user_can('administrator')) {
