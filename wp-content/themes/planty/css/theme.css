@@ -35,6 +35,11 @@ body {
     font-weight: bold;
 }
 
+/** FOOTER **/
+.footer-menu li {
+    display: none;
+}
+
 /** HOME **/
 
 .green ,h1 ,h3 {
