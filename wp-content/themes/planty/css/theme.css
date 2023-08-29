@@ -1,12 +1,6 @@
 /****** General ***********/
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
 
-body {
-    font-family: 'Syne', sans-serif;
-    display: flex;
-    justify-content: center;
-}
 
 :root {
     --main-color: #ECE2DA;
@@ -35,7 +29,7 @@ body {
     font-weight: bold;
 }
 
-/** HOME **/
+/** HOME 
 
 .green ,h1 ,h3 {
   color: var(--second-color);
@@ -53,4 +47,4 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
+**/
