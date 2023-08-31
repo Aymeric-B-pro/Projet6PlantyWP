@@ -467,6 +467,20 @@ class WPR_Templates_Data {
 					'label' => 'new',
 					'priority' => 4,
 				],
+				'v2' => [
+					'name' => 'Digital SEO Marketing Agency v2',
+					'pages' => 'home,about,solutions,awards,careers,work,email-marketing,paid-search-marketing,search-engine-optimization,contact,blog',
+					'plugins' => '{}',
+					'tags' => 'digital agency company corporate digital services solutions agency web digital marketing seo social media branding dark black digital seo agency',
+					'theme-builder' => true,
+					'woo-builder' => false,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'pro',
+					'expert' => $is_expert ? 'free' : 'expert',
+					'custom-types' => ['wpr-work' => 'wpr_work', 'wpr-work-category' => 'wpr_work_cats'],
+					'label' => 'new',
+					'priority' => 3,
+				],
 			],
 			'digital-agency-dark' => [
 				'v1' => [
@@ -1284,9 +1298,15 @@ class WPR_Templates_Data {
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'digital-seo-marketing-agency-v1' => [
-				'name' => 'Digital SEO Agency',
+				'name' => 'Digital SEO Agency v1',
 				'pages' => ['home','about','services','team','projects','details','pricing','blog','faq','contact'],
 				'preview' => ['home','about','services','team','projects','project-details','pricing','blog','faq','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'digital-seo-marketing-agency-v2' => [
+				'name' => 'Digital SEO Agency v2',
+				'pages' => ['home','about','solutions','awards','careers','work','email-marketing','paid-search-marketing','search-engine-optimization','contact','blog'],
+				'preview' => ['home','about','solutions','awards','careers','work','email-marketing','paid-search-marketing','search-engine-optimization','contact','blog'],
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'fitness-gym-v1' => [
