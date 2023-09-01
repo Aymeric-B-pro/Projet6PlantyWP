@@ -1,35 +1,55 @@
 /****** General ***********/
 :root {
-    --main-color: #ECE2DA;
-    --second-color: #3B8E46;
-    --third-color: #D2776A;
-    --button-color: #DC9F96;
-    --second-color-button: #C02E44;
+  --main-color: #ECE2DA;
+  --second-color: #3B8E46;
+  --third-color: #D2776A;
+  --button-color: #DC9F96;
+  --second-color-button: #C02E44;
 }
 
 .wrapper {
-    width: 100%;
-    min-width: 1025px;
-    max-width: 1440px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    background-color: var(--main-color);
-}
+  width: 100%;
+  min-width: 1025px;
+  max-width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--main-color);
+} 
 
 /* HEADER */
 .header li:hover {
     font-weight: bold;
 }
 
-/* Gallerie elementor */
+/* Gallery elementor METTRE EN IMAGES POUR FLEX PAS GALLERIE */
 .gallery-item {
     padding: 12px;
   }
-
+/* Contact background */
 .elementor-background-overlay {
   border-left: 2px solid white;
   border-right: 2px solid white;
 }
+/* Contact button */
+.contact-button {
+  width: 198px;
+  height: 55px;
+  font-size: 15px;
+  line-height: 37px;
+  padding: 9px 0px 9px 0px;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  margin-left: 90px;
+}
+.contact-button:hover {
+  background-color: var(--second-color-button);
+
+}
+/* Order border 1 */
+
 
 /****** Media queries ******/
 

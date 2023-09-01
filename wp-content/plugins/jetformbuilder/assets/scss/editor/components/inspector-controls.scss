@@ -1,0 +1,15 @@
+.block-editor-block-inspector__tabs {
+
+	.components-grid.components-tools-panel {
+
+		&.components-tools-panel .color-block-support-panel__inner-wrapper {
+			grid-column: 1 / -1;
+
+			& > *:first-child {
+				border-top: 1px solid rgba(0, 0, 0, .1);
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		}
+	}
+}
