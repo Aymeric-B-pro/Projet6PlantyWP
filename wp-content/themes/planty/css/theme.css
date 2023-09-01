@@ -1,7 +1,4 @@
 /****** General ***********/
-
-
-
 :root {
     --main-color: #ECE2DA;
     --second-color: #3B8E46;
@@ -19,32 +16,29 @@
     background-color: var(--main-color);
 }
 
-/* HEADER ET FOOTER */
-/*.header-menu li,
-.footer-menu li {
-    display: none;
-} */
-
+/* HEADER */
 .header li:hover {
     font-weight: bold;
 }
 
-/** HOME 
+/* Gallerie elementor */
+.gallery-item {
+    padding: 12px;
+  }
 
-.green ,h1 ,h3 {
-  color: var(--second-color);
+.elementor-background-overlay {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
-.red ,h2 {
-    margin-bottom: 10px;
-    color: var(--third-color);
-}
+/****** Media queries ******/
 
-.canette {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/* Medium devices (tablets, less/equal than 1024px) */
+/* @media (max-width: 1024px) {
 
-**/
+} */
+
+/* Small devices (phones, less than 768px) */
+/* @media (max-width: 768px) {
+
+} */

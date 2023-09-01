@@ -2,14 +2,22 @@
 # This file is distributed under the same license as the Plugins - Custom Fonts &#8211; Host Your Fonts Locally - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-07-13 08:00:01+0000\n"
+"PO-Revision-Date: 2023-08-28 12:26:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Custom Fonts &#8211; Host Your Fonts Locally - Stable (latest release)\n"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:335
+msgid "Switched preloading fonts!"
+msgstr "Préchargement des polices modifié !"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:210
+msgid "Successfully created the Font! "
+msgstr "Police bien créée ! "
 
 #: includes/class-bsf-custom-fonts-admin.php:167
 #: includes/class-bsf-custom-fonts-admin.php:266
@@ -32,7 +40,7 @@ msgctxt "Menu title"
 msgid "Custom Fonts"
 msgstr "Polices personnalisées"
 
-#: includes/class-custom-fonts-api-init.php:180
+#: includes/class-custom-fonts-api-init.php:176
 msgid "Sorry, you cannot list resources."
 msgstr "Désolé, vous ne pouvez pas lister les ressources."
 
@@ -59,11 +67,11 @@ msgctxt "font general name"
 msgid "Custom Fonts"
 msgstr "Polices personnalisées"
 
-#: includes/class-bcf-google-fonts-compatibility.php:697
+#: includes/class-bcf-google-fonts-compatibility.php:711
 msgid "Successfully deleted font."
 msgstr "Suppression réussie de la police."
 
-#: includes/class-bcf-google-fonts-compatibility.php:672
+#: includes/class-bcf-google-fonts-compatibility.php:686
 msgid "There was some error in deleting the font."
 msgstr "Une erreur s’est produite lors de la suppression de la police."
 
@@ -76,20 +84,19 @@ msgid "visit the plugin settings page"
 msgstr "visitez la page des réglages de l’extension"
 
 #. translators: 1: Custom Fonts, 2: Plugin rating link
-#: admin/dashboard/includes/class-bsf-custom-fonts-menu.php:278
+#: admin/dashboard/includes/class-bsf-custom-fonts-menu.php:280
 msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
 msgstr "Vous aimez %1$s ? Veuillez nous laisser une note %2$s. Nous apprécions vraiment votre soutien !"
 
-#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:304
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:306
 msgid "Successfully deleted the Font!"
 msgstr "Suppression réussie de la police !"
 
-#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:259
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:261
 msgid "Successfully updated the Font!"
 msgstr "Mise à jour réussie de la police !"
 
-#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:146
-#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:209
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:147
 msgid "Successfully created the Font!"
 msgstr "Création réussie de la police !"
 
@@ -305,8 +312,8 @@ msgstr "Nom de la nouvelle police"
 
 #: includes/class-bsf-custom-fonts-taxonomy.php:92
 #: admin/dashboard/assets/build/dashboard-app.js:2
-#: admin/dashboard/assets/src/dashboard-app/pages/welcome/Welcome.js:25
-#: admin/dashboard/assets/src/dashboard-app/pages/welcome/Welcome.js:43
+#: admin/dashboard/assets/src/dashboard-app/pages/welcome/Welcome.js:82
+#: admin/dashboard/assets/src/dashboard-app/pages/welcome/Welcome.js:112
 msgid "Add New Font"
 msgstr "Ajouter une nouvelle police"
 
@@ -318,8 +325,8 @@ msgstr "Mettre à jour la police"
 #: includes/class-bsf-custom-fonts-posttype.php:87
 #: includes/class-bsf-custom-fonts-taxonomy.php:90
 #: admin/dashboard/assets/build/dashboard-app.js:1
-#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditGoogleFont.js:118
-#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditLocalFont.js:373
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditGoogleFont.js:95
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditLocalFont.js:326
 msgid "Edit Font"
 msgstr "Modifier la police"
 
@@ -409,6 +416,6 @@ msgid "Custom Fonts"
 msgstr "Custom Fonts"
 
 #. translators: 1: Astra theme from wordpress.org
-#: classes/class-bsf-custom-fonts-render.php:426
+#: classes/class-bsf-custom-fonts-render.php:446
 msgid "Custom Fonts Plugin requires minimum 1.0.16 version of the Astra Theme."
 msgstr "L’extension Custom Fonts requiert au minimum la version 1.0.16 du thème Astra."
