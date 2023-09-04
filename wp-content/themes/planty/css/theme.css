@@ -48,8 +48,10 @@
   background-color: var(--second-color-button);
 
 }
-/* Order border 1 */
-
+/*Command page wrapper*/
+.wrapper.custom-wrapper {
+  background-color: var(--second-color);
+}
 
 /****** Media queries ******/
 
