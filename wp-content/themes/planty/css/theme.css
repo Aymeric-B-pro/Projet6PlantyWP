@@ -22,10 +22,7 @@
     font-weight: bold;
 }
 
-/* Gallery elementor METTRE EN IMAGES POUR FLEX PAS GALLERIE */
-.gallery-item {
-    padding: 12px;
-  }
+
 /* Contact background */
 .elementor-background-overlay {
   border-left: 2px solid white;
