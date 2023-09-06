@@ -22,12 +22,12 @@
     font-weight: bold;
 }
 
-
 /* Contact background */
 .elementor-background-overlay {
   border-left: 2px solid white;
   border-right: 2px solid white;
 }
+
 /* Contact button */
 .contact-button {
   width: 198px;
@@ -43,11 +43,122 @@
 }
 .contact-button:hover {
   background-color: var(--second-color-button);
-
 }
+
 /*Command page wrapper*/
 .wrapper.custom-wrapper {
   background-color: var(--second-color);
+}
+
+/*Command page order number*/
+.order-quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.order-quantity img {
+  margin-bottom: 5px;
+}
+
+.quantity-button-plus {
+  width: 31px;
+  height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  background-color: var(--button-color);
+  color: white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+  box-shadow: 0px 4px 14px 0px #0000000A;
+  }
+
+.quantity-button-minus {
+  width: 31px;
+  height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  background-color: var(--button-color);
+  color: white;
+  border-top: 1px solid white;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin: 0 12px 0 0;
+  border-radius: 0 0 5px 0;
+  box-shadow: 0px 4px 14px 0px #0000000A;
+}
+
+.order-form-contenair button[type="submit"] {
+  width: 100px;
+  height: 56px;
+  padding: 9px 0px 10px 0px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  padding: 9px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--second-color-button);
+}
+
+.quantity-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 51px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: white;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 51px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: white;
+  text-align: center;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
 }
 
 /****** Media queries ******/
