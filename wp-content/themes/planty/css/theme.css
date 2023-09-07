@@ -51,8 +51,39 @@
 }
 
 /*Command page order number*/
-.order-quantity {
+.order-contenair {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding-bottom: 40px; 
+}
+
+.order-form-contenair {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.order-quantity-contenair {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+  
+
+.main-order-contenair {
+  display: flex;
+}
+
+
+.order-quantity-form {
+  display: flex;
+  align-items: center;
+}
+
+.order-quantity {
   align-items: center;
   margin-top: 10px;
   position: relative;
@@ -125,7 +156,6 @@ button:hover {
 
 .quantity-buttons {
   display: flex;
-  flex-direction: column;
 }
 
 input {
