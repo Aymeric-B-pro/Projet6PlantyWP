@@ -22,6 +22,11 @@
     font-weight: bold;
 }
 
+
+
+
+
+
 /* Contact background */
 .elementor-background-overlay {
   border-left: 2px solid white;
@@ -45,6 +50,48 @@
   background-color: var(--second-color-button);
 }
 
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-contact input, .form-contact textarea {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none; 
+  border-radius: 4px;
+  background-color: white;
+  outline: none;
+  resize: none; 
+}
+
+.form-contact button {
+  width: 198px;
+  height: 55px;
+  font-size: 15px;
+  line-height: 37px;
+  padding: 9px 0px 9px 0px;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+}
+
+.form-contact button:hover {
+  background-color: var(--second-color-button);
+}
+.form-contact .form-group-message {
+  margin-bottom: 50px;
+  width: 383px;
+  height: unset;
+  border-radius: 7px;
+  box-shadow: 0px 4px 14px 0px #0000000A;
+}
+
+
 /*Command page wrapper*/
 .wrapper.custom-wrapper {
   background-color: var(--second-color);
@@ -61,6 +108,8 @@
 }
 
 /*Command page order number*/
+/*
+
 .order-background {
   margin: 0 290px;
 }
@@ -231,6 +280,100 @@ input::-webkit-outer-spin-button {
 input[type="number"]:focus {
   outline: none;
 }
+*/
+
+/*** Seconde partie formulaire ***/ 
+
+/*
+.order-informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-info-contenair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-container h3 {
+  color: white ;
+}
+
+.form-group {
+  margin-bottom: 50px; 
+  width: 383px;
+  height: 71px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 14px 0px #0000000A;
+}
+
+.form-group-message{
+  margin-bottom: 50px;
+  width: 383px;
+  height: 237px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 14px 0px #0000000A;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.form-border-mid {
+  height: 390px;
+  margin-top: 10px;
+  border-top: none;
+  border-left: 1px solid white;
+  border-right: none;
+  border-bottom: none;
+}
+
+input, textarea {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none; 
+  border-radius: 4px;
+  background-color: white;
+  outline: none;
+  resize: none; 
+}
+
+label {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.order-btn {
+  width: 198px;
+  height: 55px;
+  border-radius: 5px;
+  padding: 9px 57px 9px 56px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  margin-bottom: 80px;
+}
+
+*/
 
 /****** Media queries ******/
 
