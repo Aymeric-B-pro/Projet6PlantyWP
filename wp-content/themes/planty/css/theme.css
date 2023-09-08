@@ -50,7 +50,43 @@
   background-color: var(--second-color);
 }
 
+.wrapper.custom-wrapper h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  width: 68%;
+  margin: 60px auto 35px;
+  padding-bottom: 60px;
+}
+
 /*Command page order number*/
+.order-background {
+  margin: 0 290px;
+}
+
+.title-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin: 60px 0 35px;
+  padding-bottom: 60px;
+}
+  
+.subtitle-order {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+  
+.title-order h1,
+.subtitle-order h3 {
+  color: white;
+  margin: 0;
+}
+
 .order-contenair {
   display: flex;
   flex-direction: column;
@@ -75,15 +111,19 @@
 
 .main-order-contenair {
   display: flex;
+  flex-direction: column;
 }
 
 
 .order-quantity-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .order-quantity {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 10px;
   position: relative;
@@ -156,6 +196,7 @@ button:hover {
 
 .quantity-buttons {
   display: flex;
+  flex-direction: column;
 }
 
 input {
