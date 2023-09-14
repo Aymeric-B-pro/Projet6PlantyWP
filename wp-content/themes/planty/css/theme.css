@@ -77,10 +77,6 @@ input.wpcf7-form-control.wpcf7-submit {
   box-shadow: 0px 4px 14px 0px #0000000A;
 }
 
-
-
-
-
 /*Command page wrapper*/
 .wrapper.custom-wrapper {
   background-color: var(--second-color);
@@ -97,8 +93,7 @@ input.wpcf7-form-control.wpcf7-submit {
   padding-bottom: 60px;
 }
 
-/*Command page order number*/
-
+/*Command page order number flavor*/
 .order-main-contenair {
   display: flex;
   flex-direction: column;
@@ -106,149 +101,6 @@ input.wpcf7-form-control.wpcf7-submit {
   max-width: 850px;
   margin: auto;
 }
-/* 
-
-              <article class="order-quantity-contenair">
-
-                  <div class="order-quantity-form">
-                    <label for="name">PAMPLE<br>MOUSSE</label>
-                    <div class="order-quantity">
-                      <div class="quantity-controls">
-                       [number class:quantity-controls pamplemousse min:0 placeholder "0"]
-                        <div class="quantity-buttons">
-                          <a href="#" class="quantity-button-plus">+</a>
-                          <a href="#" class="quantity-button-minus">-</a>
-                        </div>
-                        <a href="#">OK</a>
-                      </div>
-                    </div>
-                  </div>
-
-              </article>
-              <article class="order-quantity-contenair">
-
-                  <div class="order-quantity-form">
-                    <img src="images/Group 15.png" alt="Citron">
-                    <div class="order-quantity">
-                      <div class="quantity-controls">
-                        <input type="number" name="citron" min="0" value="0">
-                        <div class="quantity-buttons">
-                          <button class="quantity-button-plus">+</button>
-                          <button class="quantity-button-minus">-</button>
-                        </div>
-                        <button type="submit">OK</button>
-                      </div>
-                    </div>
-                  </div>
-
-              </article>
-              <article class="order-quantity-contenair">
-
-                  <div class="order-quantity-form">
-                    <img src="images/Group 14.png" alt="Framboise">
-                    <div class="order-quantity">
-                      <div class="quantity-controls">
-                        <input type="number" name="framboise" min="0" value="0">
-                        <div class="quantity-buttons">
-                          <button class="quantity-button-plus">+</button>
-                          <button class="quantity-button-minus">-</button>
-                        </div>
-                        <button type="submit">OK</button>
-                      </div>
-                    </div>
-                  </div>
-              </article>
-            </div>
-          </div>
-          <div class="order-informations">
-
-              <div class="order-info-contenair">
-                <div class="form-container">
-                  <div class="form-section1">
-                    <h3>Vos informations</h3>
-                    <div class="form-group">
-                      <label for="nom">Nom :</label>
-                      <input type="text" id="nom" name="nom" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="prenom">Prénom :</label>
-                      <input type="text" id="prenom" name="prenom" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="email">E-mail :</label>
-                      <input type="email" id="email" name="email" required>
-                    </div>
-                  </div>
-                  <div class="form-border-mid"></div>
-                  <div class="form-section2">
-                    <h3>Livraison</h3>
-                    <div class="form-group">
-                      <label for="adresse">Adresse de livraison :</label>
-                      <input type="text" id="adresse" name="adresse" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="codepostal">Code postal :</label>
-                      <input type="text" id="codepostal" name="codepostal" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="ville">Ville :</label>
-                      <input type="text" id="ville" name="ville" required>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="order-btn">Commander</button>
-              </div>
-
-          </div>
-        </div>  
-        
-        
-  <div class="order-informations">
-    <div class="order-info-contenair">
-      <div class="form-container">
-        <div class="form-section1">
-          <h3>Vos informations</h3>
-          <div class="form-group">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
-          </div>
-          <div class="form-group">
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail :</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-        </div>
-        <div class="form-border-mid"></div>
-        <div class="form-section2">
-          <h3>Livraison</h3>
-          <div class="form-group">
-            <label for="adresse">Adresse de livraison :</label>
-            <input type="text" id="adresse" name="adresse" required>
-          </div>
-          <div class="form-group">
-            <label for="codepostal">Code postal :</label>
-            <input type="text" id="codepostal" name="codepostal" required>
-          </div>
-          <div class="form-group">
-            <label for="ville">Ville :</label>
-            <input type="text" id="ville" name="ville" required>
-          </div>
-        </div>
-      <button type="submit" class="order-btn">Commander</button>
-      </div>  
-    </div>    
-  </div>
-        
-        
-        */
-
-
-
-
-
 
 .your-order {
   display: flex;
@@ -381,7 +233,6 @@ input.wpcf7-form-control.wpcf7-submit {
   text-align: center;
 }
 
-
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -414,9 +265,13 @@ input[type="number"]:focus {
 }
 
 
-/*** Seconde partie formulaire ***/ 
 
-/*
+
+
+
+/*Command page order part 2 form*/
+
+
 .order-informations {
   display: flex;
   flex-direction: column;
@@ -472,7 +327,7 @@ input[type="number"]:focus {
   border-right: none;
   border-bottom: none;
 }
-
+/*
 input, textarea {
   width: 100%;
   height: 100%;
@@ -489,7 +344,7 @@ label {
   color: white;
   margin-bottom: 20px;
 }
-
+*/
 .order-btn {
   width: 198px;
   height: 55px;
@@ -505,7 +360,7 @@ label {
   margin-bottom: 80px;
 }
 
-*/
+
 
 /****** Media queries ******/
 
