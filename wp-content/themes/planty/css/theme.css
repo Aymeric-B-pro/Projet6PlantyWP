@@ -5,6 +5,7 @@
   --third-color: #D2776A; 
   --button-color: #E0B9B4;
   --second-color-button: #C02E44;
+  --alternative-button-color: #DC9F96;
 }
 
 .wrapper {
@@ -90,7 +91,8 @@ input.wpcf7-form-control.wpcf7-submit {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid white;
-  width: 68%;
+  width: 100%;
+  max-width: 850px;
   margin: 60px auto 35px;
   padding-bottom: 60px;
 }
@@ -99,9 +101,10 @@ input.wpcf7-form-control.wpcf7-submit {
 
 .order-main-contenair {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: column;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
 }
 /* 
 
@@ -197,62 +200,120 @@ input.wpcf7-form-control.wpcf7-submit {
               </div>
 
           </div>
-        </div>   */
+        </div>  
+        
+        
+  <div class="order-informations">
+    <div class="order-info-contenair">
+      <div class="form-container">
+        <div class="form-section1">
+          <h3>Vos informations</h3>
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-border-mid"></div>
+        <div class="form-section2">
+          <h3>Livraison</h3>
+          <div class="form-group">
+            <label for="adresse">Adresse de livraison :</label>
+            <input type="text" id="adresse" name="adresse" required>
+          </div>
+          <div class="form-group">
+            <label for="codepostal">Code postal :</label>
+            <input type="text" id="codepostal" name="codepostal" required>
+          </div>
+          <div class="form-group">
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville" required>
+          </div>
+        </div>
+      <button type="submit" class="order-btn">Commander</button>
+      </div>  
+    </div>    
+  </div>
+        
+        
+        */
 
 
-/*
-.order-contenair {
+
+
+
+
+.your-order {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  border-bottom: 1px solid white;
-  width: 100%;
-  padding-bottom: 40px; 
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+  margin: 0 0 30px 0;
 }
-*/
+
 .order-form-contenair {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: 1px solid white;
+  width: 100%;
+  max-width: 850px;
+  padding-bottom: 10px;
 }
-.img-container-fraise {
+.img-container {
   width: 192px;
   height: 128px;
-  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/09/image.png');
   background-size: 100%;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.flavor-fraise {
+  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash1.png');
+}
+.flavor-pamplemousse {
+  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash1.png');
+}
 
-.img-container-fraise h3 {
+.flavor-framboise {
+  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash1.png');
+}
+
+.flavor-citron {
+  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash1.png');
+}
+
+.img-container-subtitle {
   font-size: 20px;
   font-weight: 800;
   line-height: 24px;
   margin: 0;
   text-align: center;
   color: #FFFFFF;
-  white-space: nowrap; /* Empêche le texte de se retourner à la ligne */
+  white-space: nowrap;
 }
 
 .order-quantity-contenair {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
-}
-  
+}  
 
 .main-order-contenair {
   display: flex;
   flex-direction: column;
-}
-
-
-.order-quantity-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .order-quantity {
@@ -270,13 +331,14 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 .quantity-button-plus {
+  display: inline-block;
   width: 31px;
   height: 28px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  background-color: var(--third-color);
+  background-color: var(--alternative-button-color);
   color: white;
   border-bottom: 1px solid white;
   border-left: none;
@@ -288,13 +350,14 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
 .quantity-button-minus {
+  display: inline-block;
   width: 31px;
   height: 28px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  background-color: var(--third-color);
+  background-color: var(--alternative-button-color);
   color: white;
   border-top: 1px solid white;
   border-left: none;
@@ -305,30 +368,7 @@ input.wpcf7-form-control.wpcf7-submit {
   box-shadow: 0px 4px 14px 0px #0000000A;
 }
 
-.quantity-button-ok {
-  width: 100px;
-  height: 56px;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 37px;
-  text-align: center;
-  padding: 23px 50px;
-  background-color: var(--button-color);
-  color: white;
-  border: none;
-}
-
-button:hover {
-  background-color: var(--second-color-button);
-}
-
-.quantity-buttons {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
+.quantity-controls input[type="number"] {
   width: 51px;
   height: 56px;
   font-weight: 400;
@@ -341,15 +381,6 @@ input {
   text-align: center;
 }
 
-input[type="number"] {
-  width: 51px;
-  height: 56px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: white;
-  text-align: center;
-}
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
@@ -359,6 +390,27 @@ input::-webkit-outer-spin-button {
 
 input[type="number"]:focus {
   outline: none;
+}
+
+.quantity-button-ok {
+  display: inline-block;
+  width: 100px;
+  height: 56px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 56px; /* Ajustez cette valeur à la hauteur souhaitée */
+  text-align: center;
+  padding: 0;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  box-sizing: border-box;
+}
+
+.order-quantity a:hover {
+  background-color: var(--second-color-button);
+  color: white;
 }
 
 
@@ -456,6 +508,18 @@ label {
 */
 
 /****** Media queries ******/
+
+/*** TEST A adapter proprement ensuite !!! ***/
+@media (max-width: 768px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
+  .order-form-contenair {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) { /* Par exemple, pour les écrans entre 769px et 1024px de largeur */
+  .order-form-contenair {
+    flex-direction: row;
+  }
+}
 
 /* Medium devices (tablets, less/equal than 1024px) */
 /* @media (max-width: 1024px) {
