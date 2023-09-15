@@ -24,7 +24,6 @@
 }
 
 
-
 /*** CONTACT PAGE ***/
 /* Contact background */
 .elementor-background-overlay {
@@ -32,12 +31,11 @@
   border-right: 2px solid white;
 }
 
- 
 .form-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group16.png) left 1% bottom 1% no-repeat;
 }
 
 .form-contact input, .form-contact textarea {
@@ -88,17 +86,17 @@ input.wpcf7-form-control.wpcf7-submit {
   align-items: center;
   border-bottom: 1px solid white;
   width: 100%;
-  max-width: 850px;
+  max-width: 860px;
   margin: 60px auto 35px;
   padding-bottom: 60px;
 }
 
 /*Command page order number flavor*/
-.order-main-contenair {
+.order-main-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 850px;
+  max-width: 860px;
   margin: auto;
 }
 
@@ -112,16 +110,17 @@ input.wpcf7-form-control.wpcf7-submit {
   margin: 0 0 30px 0;
 }
 
-.order-form-contenair {
+.order-form-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 1px solid white;
   width: 100%;
-  max-width: 850px;
+  max-width: 860px;
   padding-bottom: 10px;
 }
+
 .img-container {
   width: 192px;
   height: 128px;
@@ -131,17 +130,16 @@ input.wpcf7-form-control.wpcf7-submit {
   justify-content: center;
   align-items: center;
 }
+
 .flavor-fraise {
   background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash1.png');
 }
 .flavor-pamplemousse {
   background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash1.png');
 }
-
 .flavor-framboise {
   background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash1.png');
 }
-
 .flavor-citron {
   background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash1.png');
 }
@@ -156,14 +154,14 @@ input.wpcf7-form-control.wpcf7-submit {
   white-space: nowrap;
 }
 
-.order-quantity-contenair {
+.order-quantity-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }  
 
-.main-order-contenair {
+.main-order-container {
   display: flex;
   flex-direction: column;
 }
@@ -182,7 +180,7 @@ input.wpcf7-form-control.wpcf7-submit {
   margin-top: 5px;
 }
 
-.quantity-button-plus {
+.quantity-button-plus, .quantity-button-minus {
   display: inline-block;
   width: 31px;
   height: 28px;
@@ -192,33 +190,25 @@ input.wpcf7-form-control.wpcf7-submit {
   text-align: center;
   background-color: var(--alternative-button-color);
   color: white;
+  margin: 0 12px 0 0;
+  box-shadow: 0px 4px 14px 0px #0000000A;
+  }
+
+  .quantity-button-plus {
   border-bottom: 1px solid white;
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: 0 5px 0 0;
   border-radius: 0 5px 0 0;
-  box-shadow: 0px 4px 14px 0px #0000000A;
   }
-
-.quantity-button-minus {
-  display: inline-block;
-  width: 31px;
-  height: 28px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  background-color: var(--alternative-button-color);
-  color: white;
+  
+  .quantity-button-minus {
   border-top: 1px solid white;
   border-left: none;
   border-right: none;
   border-bottom: none;
-  margin: 0 12px 0 0;
   border-radius: 0 0 5px 0;
-  box-shadow: 0px 4px 14px 0px #0000000A;
-}
+  }
 
 .quantity-controls input[type="number"] {
   width: 51px;
@@ -250,7 +240,7 @@ input[type="number"]:focus {
   border-radius: 5px;
   font-size: 15px;
   font-weight: 400;
-  line-height: 56px; /* Ajustez cette valeur à la hauteur souhaitée */
+  line-height: 56px; 
   text-align: center;
   padding: 0;
   background-color: var(--button-color);
@@ -265,74 +255,48 @@ input[type="number"]:focus {
 }
 
 
-
-
-
-
 /*Command page order part 2 form*/
 
-
-.order-informations {
+.order-info-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.order-info-contenair {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form-container {
+.info-form-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  height: 100%;
+  margin: 40px 0 30px 0;
 }
 
-.form-container h3 {
+.info-form-container h3 {
   color: white ;
 }
 
 .form-group {
-  margin-bottom: 50px; 
+  margin-bottom: 60px; 
   width: 383px;
   height: 71px;
   border-radius: 7px;
   box-shadow: 0px 4px 14px 0px #0000000A;
 }
 
-.form-group-message{
-  margin-bottom: 50px;
-  width: 383px;
-  height: 237px;
-  border-radius: 7px;
-  box-shadow: 0px 4px 14px 0px #0000000A;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 200px;
-}
-
 .form-border-mid {
-  height: 390px;
-  margin-top: 10px;
+  height: 447px;
+  max-height: 447px;
   border-top: none;
   border-left: 1px solid white;
   border-right: none;
   border-bottom: none;
 }
-/*
-input, textarea {
+
+.form-group input, .form-group textarea {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: 71px;
   border: none; 
   border-radius: 4px;
   background-color: white;
@@ -340,11 +304,11 @@ input, textarea {
   resize: none; 
 }
 
-label {
+.info-form-container label {
   color: white;
-  margin-bottom: 20px;
+  margin: 16px 0px 8px 0;
 }
-*/
+
 .order-btn {
   width: 198px;
   height: 55px;
@@ -366,12 +330,12 @@ label {
 
 /*** TEST A adapter proprement ensuite !!! ***/
 @media (max-width: 768px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
-  .order-form-contenair {
+  .order-form-container {
     flex-direction: column;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) { /* Par exemple, pour les écrans entre 769px et 1024px de largeur */
-  .order-form-contenair {
+  .order-form-container {
     flex-direction: row;
   }
 }
