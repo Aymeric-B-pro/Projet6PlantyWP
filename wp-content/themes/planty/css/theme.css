@@ -15,7 +15,6 @@
   margin: auto;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 } 
 
 /* HEADER */
@@ -63,7 +62,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group16.png) left 1% bottom 1% no-repeat;
 }
 
 .form-contact input, .form-contact textarea {
@@ -349,12 +347,28 @@ input[type="number"]:focus {
 /****** Media queries ******/
 
 /*** TEST A adapter proprement ensuite !!! ***/
-@media (max-width: 768px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
+
+@media (min-width: 320px) and (max-width: 768px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  } 
+  
+  
   .order-form-container {
     flex-direction: column;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) { /* Par exemple, pour les écrans entre 769px et 1024px de largeur */
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  } 
+  
   .order-form-container {
     flex-direction: row;
   }
@@ -363,6 +377,38 @@ input[type="number"]:focus {
 /* Medium devices (tablets, less/equal than 1024px) */
 /* @media (max-width: 1024px) {
 
+@media (max-width: 1024px) {
+  .hebergements-and-populaires {
+      flex-direction: column;
+  }
+
+  .hebergements {
+      width: 100%;
+  }
+
+  .populaires {
+      width: 100%;
+      margin-top: 50px;
+  }
+
+  .populaires-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .populaires-cards .card {
+      width: 30%;
+  }
+
+  .populaires-cards .card-title {
+      font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+      font-size: 13px;
+  }
+}
 } */
 
 /* Small devices (phones, less than 768px) */
