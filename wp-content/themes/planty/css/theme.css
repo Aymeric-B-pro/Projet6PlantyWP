@@ -10,7 +10,6 @@
 
 .wrapper {
   width: 100%;
-  min-width: 1025px;
   max-width: 100%;
   margin: auto;
   box-sizing: border-box;
@@ -53,11 +52,6 @@
   border-bottom-right-radius: 60em 5em;
 }
 
-.elementor-background-overlay {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-}
-
 .form-contact {
   display: flex;
   flex-direction: column;
@@ -87,16 +81,6 @@ input.wpcf7-form-control.wpcf7-submit {
 
 .form-contact button:hover {
   background-color: var(--second-color-button);
-}
-
-.contact-us {
-  width: auto;
-  height: auto;
-}
-
-.contact-us-message{
-  width: auto;
-  height: auto;
 }
 
 /*Command page wrapper*/
@@ -347,32 +331,28 @@ input[type="number"]:focus {
 /****** Media queries ******/
 
 /*** TEST A adapter proprement ensuite !!! ***/
+@media (min-width: 1025px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
 
-@media (min-width: 320px) and (max-width: 768px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
-  .wrapper {
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  } 
-  
-  
-  .order-form-container {
-    flex-direction: column;
-  }
 }
-@media (min-width: 769px) and (max-width: 1024px) { /* Par exemple, pour les écrans entre 769px et 1024px de largeur */
-  .wrapper {
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  } 
-  
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Par exemple, pour les écrans entre 769px et 1024px de largeur */
+ 
+
+
   .order-form-container {
     flex-direction: row;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
+
+  
+
+  .order-form-container {
+    flex-direction: column;
+  }
+}
+
 
 /* Medium devices (tablets, less/equal than 1024px) */
 /* @media (max-width: 1024px) {
