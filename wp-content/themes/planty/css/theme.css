@@ -257,9 +257,7 @@ input[type="number"]:focus {
   color: white;
 }
 
-
 /*Command page order part 2 form*/
-
 .order-info-container {
   display: flex;
   flex-direction: column;
@@ -329,69 +327,111 @@ input[type="number"]:focus {
 
 
 /****** Media queries ******/
-
-/*** TEST A adapter proprement ensuite !!! ***/
-@media (min-width: 1025px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) { /* Par exemple, pour les écrans entre 769px et 1024px de largeur */
- 
-
-
-  .order-form-container {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) { /* Par exemple, pour les écrans de 768px de largeur ou moins */
-
-  
-
-  .order-form-container {
-    flex-direction: column;
-  }
+@media (min-width: 1025px) { /* Pour les écrans de 1025px de largeur et plus */
 }
 
 
-/* Medium devices (tablets, less/equal than 1024px) */
-/* @media (max-width: 1024px) {
-
-@media (max-width: 1024px) {
-  .hebergements-and-populaires {
-      flex-direction: column;
-  }
-
-  .hebergements {
-      width: 100%;
-  }
-
-  .populaires {
-      width: 100%;
-      margin-top: 50px;
-  }
-
-  .populaires-cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
-  .populaires-cards .card {
-      width: 30%;
-  }
-
-  .populaires-cards .card-title {
-      font-size: 14px;
-  }
-
-  .populaires-cards .card-subtitle {
-      font-size: 13px;
-  }
+@media (min-width: 768px) and (max-width: 1024px) { /* Pour les écrans entre 768px et 1024px de largeur */
+.order-form-container {
+  justify-content: center;
+  height: 100%;
 }
-} */
 
-/* Small devices (phones, less than 768px) */
-/* @media (max-width: 768px) {
+.your-order {
+  justify-content: center;
+}
 
-} */
+.order-quantity-container {
+  margin: 10px;
+}  
+
+.info-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-border-mid {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  border-top: none;
+  border-bottom: 1px solid white;
+  border-right: none;
+  border-left: none;
+  margin: 20px auto;
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) { /* Pour les écrans de 320 px à 767px de largeur */
+.form-contact input, .form-contact textarea {
+  width: 100%;
+}
+
+.wrapper.custom-wrapper h1 {
+  width: 100%;
+  max-width: 767px;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 30px auto 10px;
+  padding-bottom: 30px;
+}
+
+.order-main-container {
+  width: 100%;
+}
+
+.your-order {
+  justify-content: center;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.order-form-container {
+  justify-content: center;
+  max-width: 767px;
+  height: 100%;
+  margin: 20px auto 10px auto;
+}
+
+.order-quantity-container {
+  margin: 10px;
+}  
+
+.order-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-info-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 60px; 
+  width: 100%;
+}
+
+.form-border-mid {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  border-top: none;
+  border-bottom: 1px solid white;
+  border-right: none;
+  border-left: none;
+  margin: 20px auto;
+}
+}
