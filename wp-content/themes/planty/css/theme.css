@@ -23,8 +23,14 @@
 
 /*** HOME PAGE ***/
 .background-effect1 {
-  background-color: var(--main-color);
+  background-color: #ddd6d6;
   padding-bottom: 10px;
+  border-bottom-left-radius: 60em 4em;
+  border-bottom-right-radius: 60em 4em;
+}
+
+section.background-effect1 > div.elementor-container {
+  background-color: var(--main-color);
   border-bottom-left-radius: 60em 4em;
   border-bottom-right-radius: 60em 4em;
 }
@@ -43,8 +49,18 @@
   border-bottom-right-radius: 40em 2em;
 }
 
+.contenair-illustration {
+  display: flex;
+  justify-content: center;
+  height: 750px;
+  max-height: 750px;
+  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 28%, 27%, 27%;
+  background-position: center 65%, 31.5% 60%, 68% 62%;
+}
+
 /*** CONTACT PAGE ***/
-/* Contact background */
 .background-effect-contact {
   background-color: var(--main-color);
   padding-bottom: 10px;
@@ -83,6 +99,7 @@ input.wpcf7-form-control.wpcf7-submit {
   background-color: var(--second-color-button);
 }
 
+/*** COMMAND PAGE ***/
 /*Command page wrapper*/
 .wrapper.custom-wrapper h1 {
   display: flex;
@@ -330,8 +347,16 @@ input[type="number"]:focus {
 @media (min-width: 1025px) { /* Pour les écrans de 1025px de largeur et plus */
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) { /* Pour les écrans entre 768px et 1024px de largeur */
+.contenair-illustration {
+  display: flex;
+  justify-content: center;
+  height: 750px;
+  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 50%, 47%, 47%;
+  background-position: center 65%, 5.5% 65%, 92% 65%;
+}
 .order-form-container {
   justify-content: center;
   height: 100%;
@@ -364,8 +389,17 @@ input[type="number"]:focus {
 }
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+.contenair-illustration {
+  display: flex;
+  justify-content: center;
+  height: 550px;
+  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 48%, 45%, 45%;
+  background-position: center 65%,9% 65%,89% 65%;
+}
 
-@media (min-width: 320px) and (max-width: 767px) { /* Pour les écrans de 320 px à 767px de largeur */
 .form-contact input, .form-contact textarea {
   width: 100%;
 }
