@@ -54,7 +54,7 @@ section.background-effect1 > div.elementor-container {
   justify-content: center;
   height: 750px;
   max-height: 750px;
-  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
+  background-image: url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 28%, 27%, 27%;
   background-position: center 65%, 31.5% 60%, 68% 62%;
@@ -153,16 +153,16 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 .flavor-fraise {
-  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash1.png');
+  background-image: url('/Projet%20Planty%20WP/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash1.png');
 }
 .flavor-pamplemousse {
-  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash1.png');
+  background-image: url('/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash1.png');
 }
 .flavor-framboise {
-  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash1.png');
+  background-image: url('/Projet%20Planty%20WP/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash1.png');
 }
 .flavor-citron {
-  background-image: url('http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash1.png');
+  background-image: url('/Projet%20Planty%20WP/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash1.png');
 }
 
 .img-container-subtitle {
@@ -352,7 +352,7 @@ input[type="number"]:focus {
   display: flex;
   justify-content: center;
   height: 750px;
-  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
+  background-image: url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 50%, 47%, 47%;
   background-position: center 65%, 5.5% 65%, 92% 65%;
@@ -394,7 +394,7 @@ input[type="number"]:focus {
   display: flex;
   justify-content: center;
   height: 550px;
-  background-image: url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(http://localhost/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
+  background-image: url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Planty6-1.png), url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group4.png), url(/Projet%20Planty%20WP/wp-content/uploads/2023/08/Group3.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 48%, 45%, 45%;
   background-position: center 65%,9% 65%,89% 65%;
